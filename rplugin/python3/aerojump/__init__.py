@@ -271,7 +271,7 @@ class AerojumpNeovim(object):
         self.main_win = self.nvim.current.window
 
         # Go back to the input buffer window
-        self.nvim.command('wincmd k')
+        self.nvim.command('wincmd j')
         self.nvim.current.window.height = 1
         self.nvim.command("startinsert!")
 
